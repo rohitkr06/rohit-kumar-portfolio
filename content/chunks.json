@@ -1,0 +1,170 @@
+[
+  {
+    "id": "identity-1",
+    "section": "about",
+    "title": "Who is Rohit",
+    "text": "Rohit Kumar is a Backend Engineer based in Noida, India, focused on Node.js, TypeScript, and distributed systems. He has 3 years of experience building and scaling production backend services for AI voice and messaging platforms."
+  },
+  {
+    "id": "identity-2",
+    "section": "about",
+    "title": "Current role",
+    "text": "Rohit currently works as a Software Development Engineer II at SaaS Labs, on the JustCall AIVA (AI Voice Agent) platform. He has been a core engineer on AIVA from its launch through scaling to over 7,000 customers."
+  },
+  {
+    "id": "identity-3",
+    "section": "about",
+    "title": "What Rohit owns",
+    "text": "Rohit has end-to-end ownership across live-call orchestration, event-driven pipelines, caching infrastructure, and incident response for AIVA, JustCall's AI voice agent product."
+  },
+  {
+    "id": "identity-4",
+    "section": "about",
+    "title": "Contact",
+    "text": "You can reach Rohit Kumar by email at rohitk61299@gmail.com, on LinkedIn at linkedin.com/in/rohit-kumar-2a628013a, or on GitHub at github.com/rohitkr06."
+  },
+  {
+    "id": "exp-sde2-role",
+    "section": "experience",
+    "title": "SDE II at SaaS Labs",
+    "text": "Rohit has been a Software Development Engineer II at SaaS Labs (JustCall / AIVA) in Noida, India since April 2025, and continues in this role today."
+  },
+  {
+    "id": "exp-sde2-eaf",
+    "section": "experience",
+    "title": "Enterprise Action Framework",
+    "text": "As SDE II, Rohit designed the Enterprise Action Framework: a three-stage orchestration framework with pre-call context injection, in-call tools for SMS, calendar booking, and live-agent transfer, and post-call data extraction. This framework was tied to an enterprise deal worth $1.1M in annual recurring revenue (ARR)."
+  },
+  {
+    "id": "exp-sde2-orchestration",
+    "section": "experience",
+    "title": "Live Call Orchestration",
+    "text": "Rohit built and scaled AIVA's backend live-call orchestration from launch to more than 7,000 customers, supporting roughly 5,000 AI voice calls per day. The system integrates with Retell AI, OpenAI, Twilio, and Deepgram."
+  },
+  {
+    "id": "exp-sde2-pipeline",
+    "section": "experience",
+    "title": "Event-Driven Post-Call Pipeline",
+    "text": "Rohit architected a fault-isolated, event-driven post-call processing pipeline using GCP Pub/Sub and Cloud Tasks. Incoming webhooks are acknowledged only after the event is published, and the actual processing happens asynchronously with automatic retries."
+  },
+  {
+    "id": "exp-sde2-cache",
+    "section": "experience",
+    "title": "Configuration Caching",
+    "text": "Rohit added Redis caching with a 30-minute TTL for voice-agent configuration data. This eliminated about 6 redundant MongoDB reads per incoming webhook and cut overall database load by roughly 60%."
+  },
+  {
+    "id": "exp-sde2-k8s",
+    "section": "experience",
+    "title": "Kubernetes Efficiency",
+    "text": "Rohit right-sized Kubernetes pod memory allocation by 33% and fixed misconfigured Horizontal Pod Autoscaler (HPA) targets. This let the cluster scale from 3 to 7-8 replicas at peak load, eliminated pod restarts, and cut the cluster's overall memory footprint by about 33%."
+  },
+  {
+    "id": "exp-sde2-observability",
+    "section": "experience",
+    "title": "Reliability and Observability",
+    "text": "Rohit instrumented latency and cost telemetry for the LLM, ASR (speech-to-text), and TTS (text-to-speech) pipeline stages using Langfuse, Grafana, New Relic, and Sentry. He uses LaunchDarkly for feature-flagged rollouts and serves as a first responder on PagerDuty for production incidents."
+  },
+  {
+    "id": "exp-sde1-role",
+    "section": "experience",
+    "title": "SDE I at SaaS Labs",
+    "text": "Before becoming SDE II, Rohit was a Software Development Engineer I at SaaS Labs (JustCall) in Noida, India, from July 2023 to March 2025."
+  },
+  {
+    "id": "exp-sde1-migration",
+    "section": "experience",
+    "title": "Zero-Downtime Database Migration",
+    "text": "As SDE I, Rohit led a zero-downtime migration of MySQL from version 5.x to MySQL 8 across more than 100 million rows (120GB+ of data), improving SMS throughput by up to 10x."
+  },
+  {
+    "id": "exp-sde1-moderation",
+    "section": "experience",
+    "title": "SMS Campaign Moderation",
+    "text": "Rohit built an automated moderation system that blocks policy-violating SMS campaigns before they are sent, cutting the manual review workload for the team by approximately 90%."
+  },
+  {
+    "id": "exp-sde1-provisioning",
+    "section": "experience",
+    "title": "AI Agent Provisioning",
+    "text": "Rohit designed AIVA's initial self-serve provisioning backend from scratch, covering AI agent creation, configuration, multi-tenant isolation, and full lifecycle management."
+  },
+  {
+    "id": "exp-sde1-modernization",
+    "section": "experience",
+    "title": "Platform Modernization",
+    "text": "Rohit migrated legacy PHP SMS APIs to TypeScript and NestJS with TypeORM, cutting p99 latency from around 2 seconds to under 800 milliseconds, and deployed the new services on Kubernetes for zero-downtime releases."
+  },
+  {
+    "id": "skills-languages",
+    "section": "skills",
+    "title": "Programming languages",
+    "text": "Rohit's programming languages include TypeScript, JavaScript, PHP, SQL, and C++."
+  },
+  {
+    "id": "skills-backend",
+    "section": "skills",
+    "title": "Backend and APIs",
+    "text": "Rohit's backend and API skills include Node.js, NestJS, REST API design, microservices architecture, TypeORM, and Sequelize."
+  },
+  {
+    "id": "skills-data",
+    "section": "skills",
+    "title": "Databases and caching",
+    "text": "Rohit works with MySQL, MongoDB, Redis for caching, and BigQuery for analytics."
+  },
+  {
+    "id": "skills-infra",
+    "section": "skills",
+    "title": "Cloud and infrastructure",
+    "text": "Rohit's cloud and infrastructure skills include Google Cloud Platform (GCP Pub/Sub and Cloud Tasks), Kubernetes, Docker, and LaunchDarkly for feature flags."
+  },
+  {
+    "id": "skills-ai",
+    "section": "skills",
+    "title": "AI and voice technologies",
+    "text": "Rohit has hands-on experience with OpenAI, Retell AI, Twilio, Deepgram, Langfuse, and prompt engineering for building AI voice agent products."
+  },
+  {
+    "id": "skills-observability",
+    "section": "skills",
+    "title": "Observability tooling",
+    "text": "Rohit's observability toolkit includes Grafana, New Relic, Sentry, PagerDuty, and distributed tracing."
+  },
+  {
+    "id": "skills-architecture",
+    "section": "skills",
+    "title": "Architecture and system design",
+    "text": "Rohit specializes in distributed systems, event-driven architecture, system design, and multi-tenant SaaS architecture."
+  },
+  {
+    "id": "education-1",
+    "section": "education",
+    "title": "Education",
+    "text": "Rohit holds a B.Tech in Information Technology from Bharati Vidyapeeth's College of Engineering, New Delhi, completed between 2019 and 2023 with a CGPA of 9.05 out of 10."
+  },
+  {
+    "id": "achievement-lab-legend",
+    "section": "achievements",
+    "title": "Lab Legend Award",
+    "text": "In February 2026, Rohit received the Lab Legend Award at SaaS Labs, ranking in the top 12 of 70 engineers company-wide in recognition of his engineering ownership."
+  },
+  {
+    "id": "achievement-retention",
+    "section": "achievements",
+    "title": "Customer Retention Award",
+    "text": "Rohit received a Customer Retention Award at SaaS Labs for rebuilding voice-agent prompts and call flows that saved an at-risk enterprise account."
+  },
+  {
+    "id": "impact-summary",
+    "section": "impact",
+    "title": "Impact in numbers",
+    "text": "Highlights of Rohit's measurable impact: scaled AIVA to 7,000+ customers and ~5,000 AI voice calls per day; his Enterprise Action Framework was tied to a $1.1M ARR deal; he migrated 100M+ database rows with zero downtime, improving throughput up to 10x; automated moderation cut manual review by ~90%; Redis caching cut database load by ~60%; and Kubernetes right-sizing cut memory footprint by ~33%."
+  },
+  {
+    "id": "career-trajectory",
+    "section": "about",
+    "title": "Career trajectory",
+    "text": "Rohit joined SaaS Labs (JustCall) in July 2023 as a Software Development Engineer I and was promoted to Software Development Engineer II in April 2025, growing from building AIVA's initial provisioning backend to owning enterprise-scale live-call orchestration."
+  }
+]
