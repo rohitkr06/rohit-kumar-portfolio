@@ -36,7 +36,13 @@ export function AnimatedCounter({
     let raf: number;
     const start = performance.now();
     const tick = (now: number) => {
-      const t = Math.min((now - start) / duration, 1);
+      // Clamp to [0, 1], not just capped at 1: the timestamp a browser
+      // hands a requestAnimationFrame callback can occasionally predate
+      // the performance.now() captured just above (seen in practice right
+      // after a big synchronous layout, e.g. a scroll jump), which without
+      // a lower bound sends t negative and easeOutExpo wildly negative —
+      // the counter would flash something like "-578" before correcting.
+      const t = Math.max(0, Math.min((now - start) / duration, 1));
       setDisplay(value * easeOutExpo(t));
       if (t < 1) raf = requestAnimationFrame(tick);
     };

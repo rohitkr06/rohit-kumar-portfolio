@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 
 export function Experience() {
   return (
-    <section id="experience" className="relative mx-auto max-w-5xl px-6 py-28">
+    <section id="experience" className="relative mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <SectionHeading index="02" label="Experience" title="Where the systems live." />
 
       <div className="relative space-y-10 border-l border-white/10 pl-8 sm:pl-10">
@@ -19,14 +19,14 @@ export function Experience() {
                 <div>
                   <h3 className="text-xl font-semibold text-white">{role.role}</h3>
                   <p className="mt-0.5 font-mono text-sm text-signal-cyan/80">
-                    {role.company} <span className="text-white/30">·</span> {role.companyDetail}
+                    {role.company} <span className="text-white/45">·</span> {role.companyDetail}
                   </p>
                 </div>
                 <Badge variant="outline" className="font-mono text-[11px]">
                   {role.start} — {role.end}
                 </Badge>
               </div>
-              <p className="mt-1 text-xs text-white/30">{role.location}</p>
+              <p className="mt-1 text-xs text-white/50">{role.location}</p>
 
               <ul className="mt-5 space-y-4">
                 {role.bullets.map((b) => (

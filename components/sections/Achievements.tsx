@@ -6,7 +6,7 @@ import { Award, GraduationCap } from 'lucide-react';
 
 export function Achievements() {
   return (
-    <section id="achievements" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="achievements" className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <SectionHeading index="04" label="Recognition" title="Awards & education." />
 
       <div className="grid gap-4 lg:grid-cols-3">
@@ -15,7 +15,7 @@ export function Achievements() {
             <GlassCard className="h-full p-6 transition-colors hover:border-signal-violet/40">
               <Award className="h-5 w-5 text-signal-violet" />
               <h3 className="mt-4 text-lg font-semibold text-white">{a.title}</h3>
-              <p className="font-mono text-xs text-white/40">
+              <p className="font-mono text-xs text-white/55">
                 {a.org}
                 {a.date && ` · ${a.date}`}
               </p>
@@ -28,7 +28,7 @@ export function Achievements() {
           <GlassCard className="h-full p-6 transition-colors hover:border-signal-cyan/40">
             <GraduationCap className="h-5 w-5 text-signal-cyan" />
             <h3 className="mt-4 text-lg font-semibold text-white">{education.degree}</h3>
-            <p className="font-mono text-xs text-white/40">
+            <p className="font-mono text-xs text-white/55">
               {education.start} — {education.end}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-white/60">{education.school}</p>

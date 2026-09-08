@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { personal } from '@/content/profile';
 import { TypingText } from './TypingText';
 import { AskMeAnything } from '@/components/ama/AskMeAnything';
 import { Badge } from '@/components/ui/badge';
+import { buttonVariants } from '@/components/ui/button';
 
 export function Hero() {
   return (
@@ -53,8 +54,24 @@ export function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.35 }}
+        className="mt-6"
+      >
+        <a
+          href="/rohit-kumar-resume.pdf"
+          download="Rohit-Kumar-Resume.pdf"
+          className={buttonVariants({ variant: 'outline', size: 'sm' })}
+        >
+          <Download className="h-3.5 w-3.5" />
+          Download Résumé
+        </a>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="mt-6 flex items-center gap-4"
+        className="mt-5 flex items-center gap-4"
       >
         <a
           href={`mailto:${personal.email}`}
@@ -98,7 +115,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 1 }}
-        className="mt-16 flex flex-col items-center gap-2 text-white/30 transition-colors hover:text-signal-cyan"
+        className="mt-16 flex flex-col items-center gap-2 text-white/45 transition-colors hover:text-signal-cyan"
       >
         <span className="font-mono text-[10px] uppercase tracking-[0.3em]">scroll</span>
         <ArrowDown className="h-4 w-4 animate-bounce" />

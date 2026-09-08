@@ -133,7 +133,7 @@ export function AskMeAnything() {
             <button
               type="button"
               onClick={reset}
-              className="hidden font-mono text-[10px] uppercase tracking-wide text-white/30 hover:text-white/60 sm:block"
+              className="hidden font-mono text-[10px] uppercase tracking-wide text-white/50 hover:text-white/80 sm:block"
             >
               clear
             </button>

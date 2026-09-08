@@ -12,7 +12,7 @@ const SIZE_CLASSES: Record<string, string> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="skills" className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <SectionHeading index="03" label="Skills" title="The stack, end to end." description="From the language to the pager that wakes him up at 3am." />
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-6">

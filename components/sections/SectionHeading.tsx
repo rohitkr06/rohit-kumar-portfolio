@@ -2,7 +2,7 @@ import { Reveal } from '@/components/motion/Reveal';
 
 export function SectionHeading({ index, label, title, description }: { index: string; label: string; title: string; description?: string }) {
   return (
-    <Reveal className="mb-12 max-w-2xl">
+    <Reveal className="mb-9 max-w-2xl">
       <div className="mb-3 flex items-center gap-3 font-mono text-xs text-signal-cyan/70">
         <span>{index}</span>
         <span className="h-px w-8 bg-signal-cyan/40" />

@@ -47,12 +47,12 @@ export function CommandPalette() {
           placeholder="Jump to a section, ask a question, open a link..."
           className="w-full bg-transparent font-mono text-sm text-white placeholder:text-white/30 outline-none"
         />
-        <kbd className="rounded border border-white/10 px-1.5 py-0.5 font-mono text-[10px] text-white/30">esc</kbd>
+        <kbd className="rounded border border-white/10 px-1.5 py-0.5 font-mono text-[10px] text-white/45">esc</kbd>
       </div>
       <Command.List className="max-h-80 overflow-y-auto p-2">
-        <Command.Empty className="px-3 py-6 text-center text-sm text-white/40">No matches. Try &quot;experience&quot; or &quot;contact&quot;.</Command.Empty>
+        <Command.Empty className="px-3 py-6 text-center text-sm text-white/55">No matches. Try &quot;experience&quot; or &quot;contact&quot;.</Command.Empty>
 
-        <Command.Group heading="Navigate" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/30 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-2">
+        <Command.Group heading="Navigate" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/45 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-2">
           <Item icon={<Home className="h-4 w-4" />} onSelect={() => run(() => scrollToId('home'))}>Home</Item>
           <Item icon={<BarChart3 className="h-4 w-4" />} onSelect={() => run(() => scrollToId('impact'))}>Impact</Item>
           <Item icon={<Briefcase className="h-4 w-4" />} onSelect={() => run(() => scrollToId('experience'))}>Experience</Item>
@@ -61,7 +61,7 @@ export function CommandPalette() {
           <Item icon={<Mail className="h-4 w-4" />} onSelect={() => run(() => scrollToId('contact'))}>Contact</Item>
         </Command.Group>
 
-        <Command.Group heading="Actions" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/30 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-3">
+        <Command.Group heading="Actions" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/45 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-3">
           <Item icon={<MessageSquareText className="h-4 w-4" />} onSelect={() => run(() => scrollToId('ask-me-anything'))}>
             Ask me anything about Rohit
           </Item>
@@ -70,7 +70,7 @@ export function CommandPalette() {
           </Item>
         </Command.Group>
 
-        <Command.Group heading="Links" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/30 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-3">
+        <Command.Group heading="Links" className="px-1 py-1 font-mono text-[10px] uppercase tracking-widest text-white/45 [&_[cmdk-group-heading]]:mb-1 [&_[cmdk-group-heading]]:mt-3">
           <Item icon={<Github className="h-4 w-4" />} onSelect={() => run(() => window.open(personal.github, '_blank'))}>
             Open GitHub
           </Item>

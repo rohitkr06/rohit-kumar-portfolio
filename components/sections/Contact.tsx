@@ -1,11 +1,11 @@
 import { personal } from '@/content/profile';
 import { Reveal } from '@/components/motion/Reveal';
 import { buttonVariants } from '@/components/ui/button';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Download, Github, Linkedin, Mail } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section id="contact" className="relative mx-auto max-w-4xl px-6 py-28 text-center">
+    <section id="contact" className="relative mx-auto max-w-4xl px-6 py-16 sm:py-20 text-center">
       <Reveal>
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-signal-cyan/70">05 · Contact</p>
         <h2 className="mt-3 text-4xl font-bold text-white sm:text-5xl">Let&apos;s build something reliable.</h2>
@@ -17,6 +17,14 @@ export function Contact() {
           <a href={`mailto:${personal.email}`} className={buttonVariants({ size: 'lg' })}>
             <Mail className="mr-1 h-4 w-4" />
             {personal.email}
+          </a>
+          <a
+            href="/rohit-kumar-resume.pdf"
+            download="Rohit-Kumar-Resume.pdf"
+            className={buttonVariants({ variant: 'outline', size: 'lg' })}
+          >
+            <Download className="mr-1 h-4 w-4" />
+            Download Résumé
           </a>
         </div>
 
@@ -42,7 +50,7 @@ export function Contact() {
         </div>
       </Reveal>
 
-      <footer className="mt-24 border-t border-white/5 pt-8 font-mono text-xs text-white/25">
+      <footer className="mt-16 border-t border-white/5 pt-8 font-mono text-xs text-white/45">
         <p>
           © {new Date().getFullYear()} {personal.name}. Built with Next.js, react-three-fiber, and a homegrown RAG pipeline.
         </p>

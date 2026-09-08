@@ -6,7 +6,7 @@ import { AnimatedCounter } from '@/components/ui/animated-counter';
 
 export function Impact() {
   return (
-    <section id="impact" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="impact" className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <SectionHeading
         index="01"
         label="Impact"
@@ -22,7 +22,7 @@ export function Impact() {
                 <AnimatedCounter value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
               </div>
               <p className="mt-2 text-sm text-white/50">{stat.label}</p>
-              <p className="mt-3 text-xs leading-relaxed text-white/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <p className="mt-3 text-xs leading-relaxed text-white/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 {stat.detail}
               </p>
             </GlassCard>

@@ -121,8 +121,8 @@ export function TerminalMode() {
             className="flex h-[70vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl border border-signal-cyan/30 bg-black shadow-[0_0_80px_-10px_rgba(51,225,230,0.4)]"
           >
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-2.5">
-              <span className="font-mono text-xs text-white/40">rohit@portfolio: ~ (terminal mode)</span>
-              <button onClick={close} aria-label="Close terminal mode" className="font-mono text-xs text-white/40 hover:text-white">
+              <span className="font-mono text-xs text-white/55">rohit@portfolio: ~ (terminal mode)</span>
+              <button onClick={close} aria-label="Close terminal mode" className="font-mono text-xs text-white/55 hover:text-white">
                 esc
               </button>
             </div>
